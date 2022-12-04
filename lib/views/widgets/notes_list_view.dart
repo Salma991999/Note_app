@@ -8,6 +8,9 @@ class NotesListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context,index){
       return const NoteItem();
-    });
+    },
+    physics: const BouncingScrollPhysics(),
+      padding: const EdgeInsets.all(5.0),
+    );
   }
 }
