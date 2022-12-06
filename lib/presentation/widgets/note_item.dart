@@ -7,17 +7,18 @@ class NoteItem extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Container(
-     margin: const EdgeInsets.only(top: 10),
+     margin: const EdgeInsets.only(top: 10,left: 5.0,right: 5.0),
      padding: const EdgeInsets.all(16),
      decoration: BoxDecoration(
        color: MyColors.myYellow,
        borderRadius: const BorderRadius.all(Radius.circular(20)),
        boxShadow:  [
      BoxShadow(
-     color: MyColors.myGreen.withOpacity(0.8),
-     spreadRadius: 0.5,
-     blurRadius: 0.5,
-     offset:const Offset(0.5, 1),
+     color: MyColors.myGreen.withOpacity(1),
+     spreadRadius:2,
+     blurRadius: 2,
+     blurStyle: BlurStyle.solid
+     //offset:const Offset(2, 2),
      ),],),
      child: Column(
        crossAxisAlignment: CrossAxisAlignment.end,
