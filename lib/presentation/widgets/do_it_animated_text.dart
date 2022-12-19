@@ -1,6 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-
 import '../../constant/colors.dart';
 
 class DoItAnimatedText extends StatelessWidget {
@@ -24,12 +23,13 @@ class DoItAnimatedText extends StatelessWidget {
     ),
       child: AnimatedTextKit(
       pause: const Duration(milliseconds: 200),
-    repeatForever: true,
-    animatedTexts: [
-    WavyAnimatedText('Let\'s  do  it'),
-    ],
-    isRepeatingAnimation: true,
-    ),),
+      repeatForever: true,
+        animatedTexts: [
+       WavyAnimatedText('Let\'s  do  it'),
+       ],
+        isRepeatingAnimation: true,
+       ),
+      ),
     );
   }
 }
